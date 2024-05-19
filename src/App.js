@@ -25,22 +25,22 @@ function App() {
   return (
     <div>
       <Header/>
-      <div className="bg-green-600 pb-3">
-        <div className="container mx-auto">
+      {/* <div className="">
+        <div className="">
           <SearchBox searchTerm={(text) => setSearch(text)}/>
 
           {!isLoading && images.length === 0 && 
-          <div className="h-screen text-center items-center ">
-            <h1 className="text-6xl font-extrabold mt-32 ">No Images Found</h1>
+          <div className="">
+            <h1 className="">No Images Found</h1>
           </div> }
 
-          {isLoading ? <h1 className="text-6xl text-center mx-auto mt-32">Loading...</h1> : <div className="grid grid-cols-4 gap-6 ">
+          {isLoading ? <h1 className="">Loading...</h1> : <div className=" ">
             {images.map(image => (
               <ImgCard key={image.id} image={image} />
             ))}
           </div>}
         </div> 
-      </div>
+      </div> */}
       <Footer/>
     </div>   
   );
